@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aulas de Biologia - Prof. Antonio Fernandes</title>
+<link rel="stylesheet" type="text/css" href="css/modelo.css" />
+
+<script language="JavaScript">
+function Enviar(opcao)
+{
+	if(opcao == 1)
+	{
+  document.form.action = "downloads.html";
+  document.form.target = "iframemain";
+  document.form.submit() ;
+	}
+	if(opcao == 2)
+	{
+  document.form.action = "decalques_novo.php";
+  document.form.target = "iframemain";
+  document.form.submit() ;
+    }
+if(opcao == 3)
+	{
+  document.form.action = "decalques_abrir.php";
+  document.form.target = "iframemain";
+  document.form.submit();
+  }
+ }
+</script>
+
+
+
+
+</head>
+
+
+
+<body>
+<form action="" method="post" name="form" target="" id="form" onSubmit=""> 
+
+ <table width="500" align="center" border="0" cellpadding="0" cellspacing="0">
+           <tr>
+            <td><input type="button" name="downloads" class="btn"  value="Downloads" onclick="Enviar(1);" /></td>
+            <td><input type="button"  name="exercicios" class="btn"  value="Exercícios" onclick="Enviar(2);" /></td>
+          </tr>
+        </table>
+</form>
+		
+
+
+<iframe name="iframemain" width="100%" height="600" src="css/main.html" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+		
+		
+</body>
+</html>
